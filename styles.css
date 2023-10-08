@@ -1,0 +1,451 @@
+
+
+/* Pagina web Tim Burton v1 */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* navbar */
+
+.navbar {
+
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.navbar ul li {
+
+    display: inline;
+
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* --- Index --- */
+
+    /* background */
+.body_index {
+    background-image: url("./multimedia/index/background_index.gif");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    /* titulo */
+
+.main_title {
+    color: white;
+    margin: 80px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+            /*other title: titulos de las otras paginas (bio, film)*/
+.other_title {
+    /*display: inline;*/
+    font-size: 30px;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 600;
+    text-align: center;
+    /*aca se limpian y te permite manejar el texto*/
+    clear: both;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+}
+
+.tim_title {
+    display: inline;
+    font-size: 30px;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 600;
+}
+
+#burton_title {
+    display: inline;
+    font-size: 90px;
+    font-family: 'Allura', cursive;
+    font-weight: bold;
+}
+
+    /* Barra de navegación */
+
+.main_navigation {
+    margin-top: 150px;
+    text-align: center;
+
+}
+
+.main_navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier Prime', monospace;
+    text-shadow: rgb(180, 202, 123) 2px 2px;
+
+}
+
+.main_navigation li {
+    padding: 5px;
+
+}
+
+.main_navigation a:hover {
+    font-size: 30px;
+}
+
+#sobremi {
+    margin-top: 1%;
+
+}
+
+footer {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 15%;
+    opacity: 25%;
+}
+
+
+
+
+
+/* --- Biografia --- */
+
+    /* background */
+.body_biografia {
+    background-image: url("multimedia/biografia/cadav.gif");
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+div.firma {
+    text-align: center;
+}
+
+img#firma {
+    height: 100px;
+}
+
+.biografia_div {
+
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: justify;
+
+}
+
+.biografia_div p {
+    color: whitesmoke;
+    margin-left: 1%;
+    margin-right: 1%;
+    /*aca el overflow*/
+   overflow: auto;
+   font-size: 20px;
+
+}
+
+
+#burton_img {
+    max-width: 100%;
+    float: left;
+    margin-right: 2%;
+   
+   
+
+}
+
+#burton_img {
+    height: 400px;
+}
+
+.biografia_div_premios {
+    width: 100%;
+    text-align: center;
+   
+    display: block
+
+    }
+
+
+.prem1{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 40%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+
+.prem2 {
+    margin-top: 5%;
+    margin-right: 10%;
+    width: 40%;
+    float: right;
+    margin-bottom: 5%;
+}
+
+h1.titulo_premio {
+
+    font-size: 25px;
+}
+
+.p_premio {
+    color: whitesmoke;
+}
+
+h1{
+ color: whitesmoke;
+}
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 3%;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+/* --- Filmografia --- */
+
+    /* background */
+.body_filmografia {
+    background-image: url("./multimedia/filmografia/background.jpg");
+    background-size:contain;
+    background-attachment: fixed;
+}
+
+    /*contenedor*/
+.film_contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+    /*columna general*/
+.film_columna_general {
+
+    width: 50%;
+
+}
+
+    /*colunmnas izq y der general*/
+.film_columna_izquierda {
+    width: 50%;
+    float: left;
+
+}
+
+.film_columna_derecha {
+    width: 50%;
+    float: right;
+
+}
+
+
+    /* titulos pelis */
+
+.film_title {
+
+    font-size: 25px;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+
+}
+
+    /* peliculas, todas */
+.img_all {
+
+    height: 250px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+.img_all img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.text_all {
+
+    height: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+
+}
+.text_all_text {
+
+    text-align: justify;
+    padding: 5%;
+
+}
+.text_all_calif img{
+
+    width: 50%;
+
+}
+
+
+
+
+
+
+/* --- Cinematografia --- */
+
+    /* background*/
+.body_cinematografia {
+    background-image: url("./multimedia/cinematografia/background.gif");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cinematografia_div {
+    text-align: center;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5%;
+    padding-top: 0;
+    text-shadow: 2px 2px black;
+
+
+}
+
+.imagenes {
+    margin-top: 5%;
+}
